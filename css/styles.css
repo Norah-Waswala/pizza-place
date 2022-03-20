@@ -1,0 +1,49 @@
+/* body style*/
+body {
+  /* background-image: url(../images/logo.jpg); 
+ background-size: cover; */
+background-color: black;
+margin: auto;
+padding: 10%;
+} 
+/* banner styles */
+.banner {
+  background-image: url(../images/banner.jpg);
+  min-height: 10%;
+  
+  height: 300px;  
+  padding: 50px;
+  border: 1px solid red;
+  background-position: 100%;
+  background-size: contain;
+  
+}
+/* navigation styles*/
+.container {
+  background-color: rgb(214, 196, 201);
+  padding: 3%;
+ 
+  
+}
+.container h4 {
+  text-align: center;
+}
+#home1 {
+  display: none;
+}
+
+
+
+
+/*footer styles*/
+
+.footer{
+  text-align: center;
+}
+.footer h3{
+  color: bisque;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer p{
+  color: bisque;
+}
