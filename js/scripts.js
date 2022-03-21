@@ -1,28 +1,21 @@
-// $(document).ready(function() {
-//     $(".home").click(function() {
-//       $("#home1").toggle();
-//       $(".home").toggle();
-//     });
-//     // $("#home1").click(function(){
-//     //     $(".home").toggle();
-//     //     $("#home1").toggle();
 
-//     // });
-//     $(".home").click(function() {
-//       $("body").css("background-color","red")
-
-//     })
-// });
-//message alert
-var selectedValues = {};
-
-function radioClicked(rb) {
-  if (selectedValues[rb.name] === undefined) {
-    selectedValues[rb.name] = rb.value;
-    doTableProcessing();
-  }
-  else {
-    alert("You can't change the selected values");
-    document.getElementById(rb.name + selectedValues[rb.name]).checked = true;
-  }
+//business logic
+function pizza(flavors,toppings,sizes,crusts,total) {
+this.flavors= flavors;
+this.toppings=toppings;
+this.sizes=sizes;
+this.crusts=crusts;
+this.total=total;
 }
+pizza.prototype.pizzaOrder= function(){
+  this.flavor + this.toppings + this.sizes + this.crusts + this.total
+}
+console.log(pizzaOrder)
+// $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
+// //user interface logic
+// $(document).ready(function() {
+//   $("form#new-contact").submit(function(event) {
+//     event.preventDefault();
+
+//     var inputtedFirstName = $("input#new-first-name").val();
+//     var inputtedLastName = $("input#new-last-name").val();
