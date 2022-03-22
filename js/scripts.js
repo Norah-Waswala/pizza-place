@@ -1,21 +1,40 @@
 
 //business logic
-function pizza(flavors,toppings,sizes,crusts,total) {
+function pizzaOrder(flavors,toppings,sizes,crusts,quantity) {
 this.flavors= flavors;
 this.toppings=toppings;
 this.sizes=sizes;
 this.crusts=crusts;
-this.total=total;
+this.quantity=quantity
 }
-pizza.prototype.pizzaOrder= function(){
-  this.flavor + this.toppings + this.sizes + this.crusts + this.total
+function priceCheck(toppingsPrice,sizesPrice,crustsPrice,quantity){
+  // this.flavorsPrice= flavorsPrice;
+  this.toppingsPrice=toppingsPrice;
+  this.sizesPrice=sizesPrice;
+  this.crustsPrice=crustsPrice;
+  this.quantityPrice=quantityPrice
 }
-console.log(pizzaOrder)
-// $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
-// //user interface logic
-// $(document).ready(function() {
-//   $("form#new-contact").submit(function(event) {
-//     event.preventDefault();
+var flavors=["ChickenHawaiian","CheeseBurger","MeatDeluxe","ChickenBeefPepperoni","SpicyBoerewors"]
+var toppings=["Sausage","Pepperoni","Mushroom","Extracheese","Onion"]
+var toppingsPrice=[100,70,50,50,30]
+var sizes=["large","medium","small"]
+var sizesPrice=[1500,1000,700]
+var crusts=["crispy","stuffed","glutenFree"]
+var crustsPrice=[30,40,20]
 
-//     var inputtedFirstName = $("input#new-first-name").val();
-//     var inputtedLastName = $("input#new-last-name").val();
+priceCheck.prototype.totalAmount=function(){
+  return(this.flavorsPrice + this.toppingsPrice + this.sizesPrice + this.crustsPrice) *this.quantity
+}
+// // user interface logic
+// $("document").ready(function(){
+// $("#remarks").click(function(event){
+//   event.preventDefault();
+//   total()
+// })
+// })
+
+
+// pizza.prototype.pizzaOrder= function(){
+//   this.flavor + this.toppings + this.sizes + this.crusts + this.total
+// }
+// console.log(pizzaOrder)
