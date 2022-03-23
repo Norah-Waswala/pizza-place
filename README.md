@@ -26,7 +26,7 @@ A  web application where customers can order different sizes of pizzas with one 
 For more information, find me at my email (https://norah.waswala15@gmail.com)
 
 ## link to live site on github pages
-https://norah-waswala.github.io/Denali-Studio/
+https://norah-waswala.github.io/pizza-place/
 
 ## License and copyright information
 [MIT LICENSE](LICENSE)
