@@ -157,13 +157,15 @@
     <div class="contact">
       <div style="text-align:center">
         <h2>Confirm yes for home delivery</h2>
-        <p>Our delivery charges are fixed at 150ksh</p>
+        
       </div>
         <div class="radio">
-          <input type="radio" id="deliveryStatus" name="confirmation" value="home delivery">
+          <input type="radio" name="message" id="deliveryMessage" value="message" onclick="alert('The delivery charge is 150 ksh');" />
+          <!-- <input type="radio" id="deliveryStatus" name="confirmation" value="home delivery onclick="alert('test');" /> -->
            <label for="html">YES</label><br>
-          <input type="radio" id="deliveryStatus" name="confirmation" value="home delivery">
-           <label for="html">NO</label><br>
+          <!-- <input type="radio" id="deliveryStatus" name="confirmation" value="home delivery">
+           <label for="html">NO</label><br> -->
+         
         </div>
            <button class="checkoutTotal">Total Bill</button>
            <ul id="pizaatotal"></ul>

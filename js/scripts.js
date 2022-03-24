@@ -88,13 +88,15 @@ $(document).ready(function (event) {
                 console.log("No price");
         }
         
-          
+         
     
         if ((pSize === "0") && (pCrust == "0") && (pTopping== "0")) {
             alert("please select pizza size and crust")
         } else {
-            $(".list").show();
-           
+            $(".list").show();{
+              
+            }
+   
             // $("#pizzaOrder").show();{
                 // return pizzaOrder()
             //     console.log(pizzaOrder());
@@ -114,7 +116,8 @@ $(document).ready(function (event) {
     $("#totals").text(total);
 
     $(".list").append(
-        '<ul><li id="pizzaOrder">' 
+    
+        '<li><li + id="pizzaOrder">' 
         +
         '</li><li id="pizzaName">' 
         +
@@ -144,25 +147,27 @@ $(document).ready(function (event) {
 
 
 
-// function sumTable() {
-//     var all = 0;
-//     $(".total").each(function () {
-//       all += parseFloat($(this).text());
-//     });
-//     $('#message').text(all);
-// }
-//   function deliver() {
-//     var fName = $("#firstNames").val();
-//     var lName = $("#lastName").val();
-//     var address = $("#homeAddress").val() 
+
+
+function sumTable() {
+    var all = 0;
+    $(".checkoutTotal").each(function () {
+      all += parseFloat($(this).text());
+    });
+    $('#pizzatotal').text(all);
+}
+  function deliver() {
+    var fName = $("#firstNames").val();
+    var lName = $("#lastName").val();
+    var address = $("#homeAddress").val() 
         
       
-//     }
-//     alert(` Thank you ${fName + lName}for choosin hot pizza. Your order will be delivered at ${address}')
+    }
+    alert(` Thank you ${fName + lName}for choosin hot pizza. Your order will be delivered at ${address}')
  
 
 
 
 
 
-// })
+//
